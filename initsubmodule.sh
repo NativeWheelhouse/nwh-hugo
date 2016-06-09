@@ -1,5 +1,5 @@
 git submodule deinit public || true
+git rm public
 rm -rf .git/modules/public
-rm -rf public
 
-git submodule add -b master git@github.com:nativewheelhouse/nativewheelhouse.github.io.git public
+git submodule add -b master https://github.com/NativeWheelhouse/nativewheelhouse.github.io.git public
