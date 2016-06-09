@@ -1,0 +1,7 @@
+baseurl: "http://nativewheel.house/"
+languageCode: "en-us"
+title: "Native Wheelhouse"
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+canonifyurls: true
