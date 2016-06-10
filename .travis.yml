@@ -1,11 +1,8 @@
-language: go
-go:
-  - tip
 before_install:
 - brew update
 - brew install hugo
 script: /scripts/build.sh
-deploy: /scripts/deploy.sh
+after_success: /scripts/deploy.sh
 notifications:
   slack:
     rooms:
