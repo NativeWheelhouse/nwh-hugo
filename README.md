@@ -1,5 +1,6 @@
 # Native Wheelhouse
 
+[![Build Status](https://travis-ci.org/NativeWheelhouse/nwh-hugo.svg?branch=master)](https://travis-ci.org/NativeWheelhouse/nwh-hugo)
 ---
 
 ### Hugo Static Site Generator
