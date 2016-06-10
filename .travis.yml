@@ -2,8 +2,12 @@ os: osx
 before_install:
 - brew update
 - brew install hugo
-script: scripts/build.sh
-after_success: scripts/deploy.sh
+script: 
+- chmod +x scripts/build.sh
+- scripts/build.sh
+after_success: 
+- chmod +x scripts/deploy.sh
+- scripts/deploy.sh
 notifications:
   slack:
     rooms:
