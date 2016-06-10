@@ -3,7 +3,7 @@ before_install:
 install:
 - brew install hugo
 script: scripts/build.sh
-deploy: scripts/deploy.sh "deploying site `date`"
+deploy: scripts/deploy.sh
 notifications:
   slack:
     rooms: 
