@@ -1,0 +1,16 @@
+os: osx
+before_install:
+- brew update
+- brew install hugo
+script: 
+- chmod +x scripts/build.sh
+- scripts/build.sh
+after_success: 
+- chmod +x scripts/deploy.sh
+- scripts/deploy.sh
+notifications:
+  slack:
+    rooms:
+      secure: AHOAIx/66n6ELWmbSOaXHUTMmsOQ66kVBpyW8HfCJ1hpPPT5hq/NebQ5lVwGcO+orfFSYaGzVDBtNup+werHcy1g5NLNWjFNjR9Rl54sKCNLAvK028RkRHatnt1YqogYJgmAWPX/1LQiavQM5aNxKM4pLIF9gw8UcCfENjcy6kSNfZ778TrHNoC7j0PC533AcGYeUQq4YRTMt3QrWie72BmKGRpJT+g2R5Xwlvz3/yOSOr781HEyNx2ign66ObxC/neGA3n8KomizCpsJmzy+OpUaPCPHoaGUAifWc+qJ9Qn4a8vM4Dl/CXyY1VMhH37Y7cZUbJnXApjnJoJ2Z5MNxILLJNR5BOBjSdCxqXz2TCm7rvkBeSEm8U7qWz0Q81+SoYtiQnPGsPdzU3VIIPGQgn7Tw4PQnrv4YO8ndo7zI4Tz/94ri8gzO0fPvsb36A/7uU9OtHj7/SJEkFxHGEeP0OyFVdKuaJwfPX4DYaYyllRUQbzi5D3nJaYwolnxtsL7akGfQfJoRQ5EGJFcz9WlR+laGIhMx1ODCVjeGJijJPamrb3XgEmhuj2V6Y1GhWgBG2/NOj8nAqyW9hmSoQ1GSmyvz50IGxEBZ2DjuKf+0pt6pHW+gN9JcSXYRL+PYXv7SWTs217s6zDCavoEQruL23T2v1vKkhtI7Wff6A1J38=
+    on_success: always
+    on_failure: always
