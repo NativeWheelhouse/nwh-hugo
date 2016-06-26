@@ -6,7 +6,7 @@ layoutdir: "layouts"
 publishdir: "public"
 canonifyurls: true
 metadataformat: "yaml"
-theme: "hugo-material-docs"
+theme: "hugo-material"
 
 params:
  # General information
@@ -55,5 +55,5 @@ menu:
     url: "/episodes/"
     weight: 10
   - name: "The Nerds"
-    url: "about-us/"
+    url: "/about-us/"
     weight: 20

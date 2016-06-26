@@ -2,3 +2,7 @@
 	path = public
 	url = https://github.com/NativeWheelhouse/nativewheelhouse.github.io.git
 	branch = master
+[submodule "themes/hugo-material"]
+	path = themes/hugo-material
+	url = https://github.com/NativeWheelhouse/hugo-material-docs.git
+	branch = master
