@@ -3,4 +3,4 @@
 echo -e "Generating static site..."
 
 # Build the project.
-hugo -t Lanyon
+hugo -t
