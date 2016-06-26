@@ -8,6 +8,11 @@ script:
 after_success: 
 - chmod +x scripts/deploy.sh
 - scripts/deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "48739375c8c4"
+  - COMMIT_AUTHOR: "Travis CI"
+  - COMMIT_AUTHOR_EMAIL: "nativewheelhouse@gmail.com"
 notifications:
   slack:
     rooms:
