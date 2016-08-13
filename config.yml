@@ -1,7 +1,7 @@
 baseurl: "https://nativewheel.house/"
 languageCode: "en-us"
 title: "Native Wheelhouse"
-contentdir: "content"
+contentdir: "content/episode"
 layoutdir: "layouts"
 publishdir: "public"
 canonifyurls: true
