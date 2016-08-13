@@ -13,6 +13,9 @@ env:
   - ENCRYPTION_LABEL: "48739375c8c4"
   - COMMIT_AUTHOR: "TravisCI"
   - COMMIT_AUTHOR_EMAIL: "nativewheelhouse@gmail.com"
+  - DEPLOY_REPO_SSH_PREFIX: "git@github.com:"
+  - DEPLOY_REPO_HTTPS_PREFIX: "https://github.com/"
+  - DEPLOY_REPO: "NativeWheelhouse/nativewheelhouse.github.io.git"
 notifications:
   slack:
     rooms:

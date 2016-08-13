@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -e
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+set -ex
+echo "Deploying updates to GitHub..."
 
 SOURCE_BRANCH="master"
 
@@ -30,14 +30,11 @@ cd public
 git config user.name "${COMMIT_AUTHOR}"
 git config user.email "${COMMIT_AUTHOR_EMAIL}"
 
-# turn this into a git repo so I can push to remote
-SSH_REPO="git@github.com:NativeWheelhouse/nativewheelhouse.github.io.git"
-git init
 git add .
 git commit -m "deploying site `date`"
 
 git config push.default simple
-git push $SSH_REPO $SOURCE_BRANCH
+git push origin $SOURCE_BRANCH
 
 # Come Back
 cd ..
