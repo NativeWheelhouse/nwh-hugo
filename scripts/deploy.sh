@@ -26,11 +26,15 @@ ssh-add deploy_key
 # Push source
 cd public
 
-#convert origin from https to ssh so the key will work
-REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
-echo $SSH_REPO
-echo $SOURCE_BRANCH
+# appease the git gods
+git config user.name "${COMMIT_AUTHOR}"
+git config user.email "${COMMIT_AUTHOR_EMAIL}"
+
+# turn this into a git repo so I can push to remote
+SSH_REPO="git@github.com:NativeWheelhouse/nativewheelhouse.github.io.git"
+git init
+git add .
+git commit -m "deploying site `date`"
 
 git config push.default simple
 git push $SSH_REPO $SOURCE_BRANCH
