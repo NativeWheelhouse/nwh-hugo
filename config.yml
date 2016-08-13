@@ -19,7 +19,7 @@ params:
  repo_url: "https://github.com/NativeWheelhouse"
 
  version: "1.0.0"
- logo: "images/logo.png"
+ logo: "images/NWHlogo.png"
  favicon: ""
 
  permalink: "#"
